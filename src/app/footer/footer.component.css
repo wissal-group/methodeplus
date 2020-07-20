@@ -1,0 +1,72 @@
+.site-footer
+{
+  background-color:#eeeeee;
+  margin-top: 150px;
+  padding:65px 0 60px;
+  font-size:15px;
+  line-height:24px;
+}
+.site-footer img{
+	padding-bottom:19px;
+}
+
+.site-footer h5 {
+  font-size:16px;
+  text-transform:capitalize;
+  margin-top:5px;
+  letter-spacing:1px
+}
+.footer_h a{
+  color:#777977;
+  font-size:15px !important;
+}
+
+.footer_h p i{
+margin-right:5px;
+}
+
+.site-footer .footer-links a
+{
+  color:#777977;
+  font-size:15px !important;
+  line-height:1.8rem !important;
+}
+.site-footer .footer-links a:hover
+{
+  color: #1F9510;
+  text-decoration:none;
+}
+.btn-light{
+ color: #1F9510;
+ /*background:#efefef;*/
+ font-family:'Cera Pro Medium';
+} 
+
+.fa-phone , .fa-at , .fa-map-marker{
+	font-size:20px;
+	 color: #1F9510;
+}
+.social-media-rounded .fa {
+  padding: 13px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 2px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.125);
+  border: 1px solid rgba(212, 212, 212, 0.2);
+ 
+}
+.social-media-rounded .fa:hover {
+background:#efefef;
+}
+.fa-facebook , .fa-twitter, .fa-instagram{
+  background: #ffffff;
+  color: #1F9510;
+}
+
+.input-group .input{
+	width:100%;
+}
+

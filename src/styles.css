@@ -1,0 +1,84 @@
+
+body {
+    padding: 0;
+    margin: 0;
+/*------------------color*/   
+  }
+  a {
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;  
+    font-size: 16px;
+
+  }
+  a:hover {/***********************************/
+    outline: none;
+    text-decoration: none;
+
+  }
+  p {
+    font-family: Cera Pro Light;
+    font-size: 16px;
+    line-height: 1.6em;
+	color:#777977;
+/*-------modification
+ text-align: justify !important;	
+
+	margin-top: 0px;
+	margin-bottom: 5rem !important;
+	------------------*/
+  }
+  
+  h1, h2, h3, h4, h5 ,h6{
+   font-family: Cera Pro Bold;
+   color: #282424;
+  }
+  
+/*-------modification*/
+  h3{
+	font-size:20px !important;
+	line-height:1.8em !important;
+	margin-top: 5rem !important;
+  }
+
+  h6{
+   font-family:  Cera Pro Regular;
+   margin-top:5px !important;
+   /*font-size:16px !important;*/
+   color:green ;
+ }
+
+ ul li {
+	color:#777977;
+ }  
+ 
+.btn{
+  font-family: 'Cera Pro Medium';
+ font-size:17px !important;
+ } 
+ 
+ strong{
+	color: #282424;
+ }
+  
+ 
+ section{
+  margin-top: 60px;
+ }  
+ 
+.site-section img{
+	margin-bottom :-4rem !important;
+}
+
+.site-section ul{
+margin: 0 1rem 5rem;
+padding-left: 1px;
+text-align: left;
+}
+
+.site-section ul li{
+	line-height: 1.8;
+}
+     
+  
+  
