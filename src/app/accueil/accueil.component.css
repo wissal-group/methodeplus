@@ -138,8 +138,8 @@
         border-radius: 5px; 
     }
     .h_gallery_item .item_text {
-        text-align: center;
-            padding:0px 12px;	/*************************/
+      text-align: center;
+      padding:0px 12px;	
       }
     .h_gallery_item .item_text h5 {
       margin-top: 69px;
