@@ -1,5 +1,5 @@
 
-<div class="modal" id="mymodel" >
+<div #modaled class="modal" id="mymodal" >
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-body">
@@ -8,22 +8,18 @@
 					<form  [formGroup]="registerForm" (ngSubmit)="onSubmit()">					
 						<h2>Inscription</h2>
 						<p class="hint-text">Vous pouvez <a>télecharger le formulaire d'inscription</a> et l'envoyer ou remplire ce formulaire</p>
-						<div class="form-check">
-							<input class="form-check-input"  type="radio" name="radio1" value="option1">
-							<label class="form-check-label" for="exampleRadio1"> Cours d'arabe enfants</label>
+						
+						<div *ngFor="let item of Radio_List ;let i=index" >
+							
+							<input type="radio" [value]="item.value" [checked]="item.checked" formControlName="selectedOptions">
+							<label>{{item.name}}</label>
+
 						</div>
-						<div class="form-check">
-							<input class="form-check-input" type="radio" name="radio2" value="option2">
-							<label class="form-check-label" for="exampleRadio2">Cours d'arabe adultes</label>
-						</div>
-						<div class="form-check">
-							<input type="radio" class="form-check-input" name="radio3" value="option3">
-							<label class="form-check-label" for="exampleRadio3">Cours de coran</label>
-						</div>
-						<div class="form-check">
-							<input type="radio" class="form-check-input" name="radio4" value="option4">
-							<label class="form-check-label" for="exampleRadio4">Cours d'islam</label>
-						</div>
+
+						<span class="error-msg" *ngIf="submitted && registerForm.controls['selectedOptions'].errors?.required">
+								Please select any option above!
+						</span>
+
 						<h4>Identité</h4>
 							<div class="form-group">
 								<div class="row">
@@ -59,8 +55,8 @@
 							<div class="form-group">
 								<div class="row">
 									<div class="col-6">
-										<input type="date" class="form-control" formControlName="date" value="Date de naissance"[ngClass]="{ 'is-invalid': submitted && f.date.errors }" />
-									    <div *ngIf="submitted && f.lastname.errors" class="invalid-feedback">
+										<input placeholder="Date de naissance " type="text" onMouseOver="(this.type='date')" onMouseOut="(this.type='text')"  id="date" class="form-control" formControlName="date" [ngClass]="{ 'is-invalid': submitted && f.date.errors }" />
+										<div *ngIf="submitted && f.date.errors" class="invalid-feedback">
 												<div *ngIf="f.date.errors.required">date is required</div>
 										</div>
 									</div>
@@ -78,7 +74,6 @@
 								</div>
 							</div>													
 					</form>
-
 
 				</div>
 			</div>			

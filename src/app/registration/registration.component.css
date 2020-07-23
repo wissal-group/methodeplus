@@ -72,3 +72,11 @@
 	color:green;
 	text-decoration: underline;
 }
+.error-msg{
+	color: red;
+	text-align: center;
+	width: 100%;
+  }
+
+
+  

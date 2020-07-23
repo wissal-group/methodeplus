@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="168" height="48" viewBox="0 0 168 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.194" y1="0.672" x2="0.928" y2="0.115" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#088900"/>
+      <stop offset="1" stop-color="#6cbd45"/>
+    </linearGradient>
+  </defs>
+  <g id="Groupe_2" data-name="Groupe 2" transform="translate(-124.985 -29.789)">
+    <path id="Tracé_1" data-name="Tracé 1" d="M154.31,35.631h-4.766l2.1,4.769h4.636Z" transform="translate(32.316 7.698)" fill="#282424"/>
+    <g id="Groupe_1" data-name="Groupe 1" transform="translate(141.34 43.153)">
+      <path id="Tracé_2" data-name="Tracé 2" d="M132.047,56.244V35.716h4.2V52.45h8.983v3.794Z" transform="translate(-132.047 -35.343)" fill="#282424"/>
+      <path id="Tracé_3" data-name="Tracé 3" d="M153.432,56.456l-1.149-2.675h-8.393l-1.149,2.675h-4.509l9.168-20.9h1.4l9.138,20.9Zm-2.61-6.126-2.735-6.939-2.735,6.939Z" transform="translate(-123.907 -35.555)" fill="#282424"/>
+      <path id="Tracé_4" data-name="Tracé 4" d="M163.027,35.714l-5.1,12.442-2.668-6.48h-4.61l6.553,14.93h1.4l9.143-20.892Z" transform="translate(-107.573 -35.345)" fill="url(#linear-gradient)"/>
+      <path id="Tracé_5" data-name="Tracé 5" d="M159.237,56.244V35.716h13.8V39.51h-9.6v4.167h7.054v3.578h-7.054V52.45h9.977v3.794Z" transform="translate(-96.27 -35.343)" fill="#282424"/>
+      <path id="Tracé_6" data-name="Tracé 6" d="M184.24,56.244h-4.724L174.2,49h-3.078v7.247h-4.2V35.716h7.709a7.734,7.734,0,0,1,5.313,1.833,6.081,6.081,0,0,1,2.084,4.791,6.484,6.484,0,0,1-.95,3.47,6.309,6.309,0,0,1-2.656,2.378ZM171.123,39.415v5.88h3.513a3.116,3.116,0,0,0,2.283-.809,2.874,2.874,0,0,0,.824-2.146,2.774,2.774,0,0,0-.857-2.116,3.143,3.143,0,0,0-2.251-.809Z" transform="translate(-86.151 -35.343)" fill="#282424"/>
+      <path id="Tracé_7" data-name="Tracé 7" d="M180.907,56.244V39.51h-6.558V35.716H191.69V39.51H185.1V56.244Z" transform="translate(-76.385 -35.343)" fill="#282424"/>
+      <path id="Tracé_8" data-name="Tracé 8" d="M182.951,47.752V35.716h4.2V48.065a4.608,4.608,0,0,0,1.244,3.435,4.963,4.963,0,0,0,6.542,0,4.646,4.646,0,0,0,1.227-3.435V35.716h4.2V47.752A8.646,8.646,0,0,1,197.9,54.19a9.272,9.272,0,0,1-12.508,0A8.672,8.672,0,0,1,182.951,47.752Z" transform="translate(-65.067 -35.343)" fill="#282424"/>
+    </g>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="168" height="48" transform="translate(124.985 29.789)" fill="none"/>
+  </g>
+</svg>

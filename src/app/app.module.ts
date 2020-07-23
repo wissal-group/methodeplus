@@ -18,10 +18,9 @@ import { RegistrationComponent } from './registration/registration.component';
 
 const appRoutes: Routes = [
   { path: 'accueil', component: AccueilComponent },
-    { path: 'qui-sommes-nous', component: QuiSommesNousComponent},
-  { path: 'cours-d\'arabe/langue-arabe-adulte', component: LangueArabeAdulteComponent },
-    { path: 'cours-d\'arabe/langue-arabe-enfants', component: LangueArabeEnfantsComponent },
-
+  { path: 'qui-sommes-nous', component: QuiSommesNousComponent},
+  { path: 'langue-arabe-adulte', component: LangueArabeAdulteComponent },
+  { path: 'langue-arabe-enfants', component: LangueArabeEnfantsComponent },
   { path: 'cours-de-coran', component: CoursCoranComponent },
   { path: 'cours-islam', component: CoursIslamComponent },
   { path: 'reg', component: RegistrationComponent },
