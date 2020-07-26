@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, NgModule, ElementRef } from '@angular/core';
 import { RegistrationComponent } from '../registration/registration.component';
+import { ModalService } from '../services/modal.service';
 declare var $:any;
 @Component({
   selector: 'app-navigation',
@@ -8,10 +9,20 @@ declare var $:any;
 })
 export class NavigationComponent implements OnInit {
 
-  constructor() { }
-//  @ViewChild('modaled') modaled;
-  
+constructor(private modalService:ModalService) {}
+
+openModal() {
+
+this.modalService.showModal();
+
+}
   ngOnInit(): void {
+
+    $(".navbar-nav li a").click(function(event) {
+      if (!$(this).parent().hasClass('dropdown'))
+          $(".navbar-collapse").collapse('hide');
+    });
+    
     $(window).scroll(function () {
       var window_top = $(window).scrollTop() + 1;
       if (window_top > 50) {
@@ -21,8 +32,4 @@ export class NavigationComponent implements OnInit {
       }
     });
   }
-
-  //openModal() {
-    //this.modaled.nativeElement.open();
-    //}
 }

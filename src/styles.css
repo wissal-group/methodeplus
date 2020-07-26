@@ -51,9 +51,12 @@ body {
  ul li {
 	color:#777977;
  }  
- 
-.btn{
-  font-family: 'Cera Pro Medium';
+.btn-success {
+  color: #fff !important;
+}
+
+ .btn {
+ font-family: 'Cera Pro regular' ;
  font-size:17px !important;
  } 
  
@@ -64,7 +67,8 @@ body {
  
  section{
   margin-top: 60px;
- }  
+
+}  
  
 .site-section img{
 	margin-bottom :-4rem !important;

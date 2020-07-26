@@ -15,6 +15,7 @@ import { QuiSommesNousComponent } from './qui-sommes-nous/qui-sommes-nous.compon
 import { LangueArabeAdulteComponent } from './langue-arabe-adulte/langue-arabe-adulte.component';
 import { LangueArabeEnfantsComponent } from './langue-arabe-enfants/langue-arabe-enfants.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { FaireDonComponent } from './faire-don/faire-don.component';
 
 const appRoutes: Routes = [
   { path: 'accueil', component: AccueilComponent },
@@ -23,7 +24,8 @@ const appRoutes: Routes = [
   { path: 'langue-arabe-enfants', component: LangueArabeEnfantsComponent },
   { path: 'cours-de-coran', component: CoursCoranComponent },
   { path: 'cours-islam', component: CoursIslamComponent },
-  { path: 'reg', component: RegistrationComponent },
+  { path: 'faire-don', component: FaireDonComponent },
+  { path: '', component: AccueilComponent },
   { path: '**', redirectTo: 'not-found' }
 ];
 
@@ -39,13 +41,13 @@ const appRoutes: Routes = [
     QuiSommesNousComponent,
     LangueArabeAdulteComponent,
     LangueArabeEnfantsComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    FaireDonComponent
 	],
   imports: [
     BrowserModule,
     FormsModule,
-   
-	ReactiveFormsModule,
+	  ReactiveFormsModule,
     RouterModule.forRoot(appRoutes)
   
   ],
