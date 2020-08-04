@@ -48,8 +48,8 @@ body {
    color:green ;
  }
 
- ul li {
-	color:#777977;
+ ul li,p {
+	color:#777977 !important;
  }  
 .btn-success {
   color: #fff !important;

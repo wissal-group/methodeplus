@@ -3,8 +3,9 @@
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-body">
-					
-				<div class="signup-form">
+
+				<div  class="signup-form">
+						
 					<form  [formGroup]="inscriptionForm" (ngSubmit)="onSubmit1() ;addValidators()" >					
 						<h2>Inscription</h2>
 						<p class="hint-text">Vous pouvez <a data-toggle="modal" data-target="#mymodal2">télecharger le formulaire d'inscription</a> et l'envoyer ou remplire ce formulaire</p>
@@ -13,15 +14,14 @@
 							<input type="radio" [value]="item.value" [checked]="item.checked" formControlName="selectedOptions">
 							<label>{{item.name}}</label>
 						</div>
-
 						<span class="error-msg" *ngIf="iSubmitted && f['selectedOptions'].errors?.required">
 							sélectionner n'importe quelle option ci-dessus!
 						</span>
-
+					
 						<h4>Identité</h4>
-							<div class="form-group">
+						<div class="form-group">
 								<div class="row">
-									<div class="col"><input type="text" formControlName="firstname" class="form-control" name="firstname" placeholder="Nom" [ngClass]="{ 'is-invalid': iSubmitted && f.firstname.errors }" />
+									<div class="col"><input type="text" formControlName="firstname" class="form-control" name="firstname" placeholder="Nom" [ngClass]="{ 'is-invalid': iSubmitted && f.firstname.errors }"/>
 									                 <div *ngIf="iSubmitted && f.firstname.errors" class="invalid-feedback">
 															<div *ngIf="f.firstname.errors.required">Nom obligatoire</div>
 													 </div>
@@ -46,27 +46,34 @@
 							<div class="form-group">
 								<input type="tel" class="form-control" formControlName="mobile" placeholder="Numéro de téléphone" [ngClass]="{ 'is-invalid': iSubmitted && f.mobile.errors }" />
 								<div *ngIf="iSubmitted && f.mobile.errors" class="invalid-feedback">
-									<div *ngIf="f.mobile.errors">Le Numéro doit être valide et comporter au moins 10 chiffres</div>      
+									<div *ngIf="f.mobile.errors">Le Numéro de teléphone obligatoire</div>      
                                 </div>
 							</div>
-							
-							<div class="form-group">
+							<!-- >npm install jquery-datepicker
+							npm install jquery-ui
+							npm install jquery jquery-ui
+							npm install angularjs-bootstrap-datetimepicker
+							wbn-datepicker
+						-->
+							 <div class="form-group">
 								<div class="row">
-									<div class="col-6">
-										<input class="form-control textbox-n" type="text" placeholder="Date de naissance" onfocus="(this.type='date')"  onblur="(this.type='text')"  id="date" formControlName="date" [ngClass]="{ 'is-invalid': iSubmitted && f.date.errors }" />
+									<div class="col-md-6 col-sm-8">
+										<input class="form-control " type="text" placeholder="Date de naissance" id="date" formControlName="date" [ngClass]="{ 'is-invalid': iSubmitted && f.date.errors }" bsDatepicker placement="top" #dp="bsDatepicker" [maxDate]="maxDate" [bsConfig]="{ dateInputFormat: 'DD/MM/YYYY' }" />
+										
 										<div *ngIf="iSubmitted && f.date.errors" class="invalid-feedback">
 												<div *ngIf="f.date.errors.required">Date obligatoire</div>
 										</div>
 									</div>
 								</div>	
-							</div>
+							</div> 
+				
 							<div class="form-group">
 								<div class="row">
 									<div class="col-6">
-										<button type="reset" class="btn btn-outline-success btn-block"  data-dismiss="modal" (click) = "hide();removeValidators();onReset()" >Annuler</button>
+										<button type="reset" class="btn btn-outline-success btn-block"  data-dismiss="modal" (click) = "removeValidators();onReset()" >Annuler</button>
 									</div>
 									<div class="col-6">
-									  <button type="submit" class="btn btn-success btn-md btn-block" >Suivant</button>
+									  <button type="submit" (click)="onSave()" class="btn btn-success btn-md btn-block" id="btn">Suivant</button>
 
 									</div>							
 								</div>
@@ -124,7 +131,7 @@
                             <div class="form-group">
 								<div class="row">
 									<div class="col-6">
-										<button type="reset" class="btn btn-outline-success btn-block"  data-dismiss="modal" (click) = "hide();removeValidators();onReset()">Annuler</button>
+										<button type="reset" class="btn btn-outline-success btn-block"  data-dismiss="modal" (click) = "removeValidators();onReset()">Annuler</button>
 									</div>
 									<div class="col-6">
 									  <button type="submit" class="btn btn-success btn-md btn-block">Envoyer</button>

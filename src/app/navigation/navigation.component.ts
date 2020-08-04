@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, NgModule, ElementRef } from '@angular/core';
 import { RegistrationComponent } from '../registration/registration.component';
-import { ModalService } from '../services/modal.service';
+import { ModalService } from '../services//modals/modal.service';
 declare var $:any;
 @Component({
   selector: 'app-navigation',
@@ -17,7 +17,7 @@ this.modalService.showModal();
 
 }
   ngOnInit(): void {
-
+    
     $(".navbar-nav li a").click(function(event) {
       if (!$(this).parent().hasClass('dropdown'))
           $(".navbar-collapse").collapse('hide');

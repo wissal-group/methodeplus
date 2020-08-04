@@ -1,11 +1,12 @@
-#mymodal{
-    position: absolute;
-    z-index: 9998;
-}
 
+  #mymodal{
+    position: absolute;
+    z-index: 1076;
+
+}
 #mymodal2{
     position: absolute;
-    z-index: 9999;
+    z-index: 1079;
     left: -16px;
 }
 .form-control{
@@ -88,14 +89,31 @@
     width: 100%;
   }
 
+  @media (min-width: 310px) and (max-width: 414px) {
+    .error-msg, .invalid-feedback{
+        color: red;
+        font-size: 12px;
+        text-align: left;
+        width: 100%;
+      }
+    }
+    @media (max-width: 991px) {
+        #mymodal2{
+            position: absolute;
+            z-index: 9999;
+            left:0px !important;
+        }
+        }
+        
   input[type='radio'] {
     visibility: hidden;
     width: 20px;
     height: 20px;
     margin: 0 5px 0 5px;
     padding: 0;
+    -moz-appearance: none !important;
     }
-input[type=radio]:before {
+input[type='radio']:before {
     position: relative;
     margin: 4px -25px -4px 0;
     display: inline-block;
@@ -106,8 +124,9 @@ input[type=radio]:before {
     border: 2px inset rgba(150,150,150,0.75);
     background:#efefef;
     content: "";
+    -moz-appearance: none !important;
     }
-input[type=radio]:checked:after {
+input[type='radio']:checked:after {
     position: relative;
     top: 0;
     left: 9px;
@@ -118,4 +137,5 @@ input[type=radio]:checked:after {
     height: 12px;
     background: radial-gradient(ellipse at top left, rgb(245,255,200) 0%, rgb(129, 226, 19) 5%, rgb(75,175,0) 95%, rgb(31,149,16) 100%);
     content: "";
+    -moz-appearance: none !important;
    }
