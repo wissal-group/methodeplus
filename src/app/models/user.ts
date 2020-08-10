@@ -4,5 +4,5 @@ export class user {
     lastname: string;
     email: string;
     mobile:number;
-    date:Date;
+    date:Date
   }

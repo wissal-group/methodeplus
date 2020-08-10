@@ -34,6 +34,8 @@
     padding: 0px 15px;
     font-family: "Cera Pro Regular";
     text-transform: capitalize;
+    /*visibility: visible;/***********m******/
+
   }
   
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -65,9 +67,11 @@
   .dropdown-menu {
     border: 0px solid rgba(0, 0, 0, 0.15) !important;
     background-color: #fafafa;
+    margin: 1rem 0 0 !important;
+    
   }
  
-  .dropdown .dropdown-menu {
+  .dropdown .dropdown-toggle .dropdown-menu {
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -75,8 +79,9 @@
     overflow: hidden;
     transform-origin: top center;
     transform: scale(1, 0);
-    display: block;
-    margin-top: 20px;/*******************************/
+    display: none;
+    /*visibility: visible;/***********m*************/
+   /* margin-top: 20px ;/*******************************/
   }
   
   .dropdown .dropdown-menu .dropdown-item {
@@ -90,10 +95,12 @@
     color: #1F9510 !important;
   }
   
-  .dropdown:hover .dropdown-menu {
+  .dropdown:hover .dropdown-toggle .dropdown-menu   {
     transform: scale(1);
     display: block;
-    
+    /*visibility: visible;/**************m*******/
+   /* margin: 20px !important;*/
+    opacity: 1;
   }
   
   @media (max-width: 991px) {
@@ -104,7 +111,13 @@
     .navbar-collapse ul li .nav-link {
       color: #282424 !important;
     }
-  
+ /* 
+    .dropdown:hover .dropdown-menu {
+      transform: scale(1);
+     /* display: block;
+      visibility: visible;**************m*******
+      margin: 0 !important;
+    }*/
   .navbar-light .navbar-toggler {
       border-color: rgb(182, 182, 182);
     }
@@ -136,16 +149,19 @@
       align-items: start !important;
     }
   
-  .dropdown .dropdown-menu {
+  .dropdown .dropdown-toggle .dropdown-menu {
       transform: scale(1, 0);
       display: none;
+     /*visibility: hidden;/*********************m**************/
     }
  
-  .dropdown:hover .dropdown-menu {
+    .dropdown:hover .dropdown-toggle .dropdown-menu {
       transform: scale(1);
       display: block;
-      margin: 0 !important;/**/
+    /*  visibility: visible;
+    /*  margin: 0 !important;/**/
     }
+
  
   .dropdown .dropdown-item:hover {
       color: #1F9510 !important;
@@ -160,4 +176,8 @@
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
     top: 0;
   }
+  
+
+
+
   

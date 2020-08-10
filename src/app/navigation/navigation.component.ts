@@ -17,7 +17,12 @@ this.modalService.showModal();
 
 }
   ngOnInit(): void {
-    
+    /*$(document).on('focusin', function (e) {
+      if ($(event.target).closest(".mce-window").length) {
+          e.stopImmediatePropagation();
+      }
+  });*/
+
     $(".navbar-nav li a").click(function(event) {
       if (!$(this).parent().hasClass('dropdown'))
           $(".navbar-collapse").collapse('hide');
