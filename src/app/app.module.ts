@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-
+import { DatePipe } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
@@ -19,6 +19,7 @@ import { FaireDonComponent } from './faire-don/faire-don.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { ApprenantsService } from './services/apprenant/ApprenantsService';
+
 
 
 const appRoutes: Routes = [
@@ -59,7 +60,7 @@ const appRoutes: Routes = [
 
   
   ],
-  providers: [ApprenantsService],
+  providers: [ApprenantsService,DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

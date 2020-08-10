@@ -8,6 +8,8 @@ declare var $:any;
 import { BsLocaleService } from 'ngx-bootstrap/datepicker';
 import { defineLocale, frLocale } from 'ngx-bootstrap/chronos';
 import { user } from '../models/user';
+import { DatePipe } from '@angular/common';
+
 defineLocale('fr', frLocale);
 
 @Component({
@@ -18,7 +20,9 @@ defineLocale('fr', frLocale);
 export class RegistrationComponent implements OnInit {
   apprenants:user[];
   user = new user();
-  alert :boolean=false;
+
+  radioSel=new Date();
+
   showModal: boolean;
   registerForm: FormGroup ;
   //formulaireForm: FormGroup;
@@ -27,24 +31,26 @@ export class RegistrationComponent implements OnInit {
 
   fSubmitted = false;
   Radio_List = [
-    { name: "Cours d'arabe enfants", value: ' 100CP ', checked: false },
-    { name: "Cours d'arabe adultes", value: ' 101TR', checked: false },
-    { name: "Cours de coran", value: ' 102MO', checked: false },
-    { name: "Cours d'islam", value: '103BE', checked: false },
+    { name: "Cours d'arabe enfants", value: "Cours d'arabe enfants", checked: false },
+    { name: "Cours d'arabe adultes", value: "Cours d'arabe adultes", checked: false },
+    { name: "Cours de coran", value: "Cours de coran", checked: false },
+    { name: "Cours d'islam", value: "Cours d'islam", checked: false },
   ];
 
   @ViewChild('basicModal') basicModal: ModalDirective;
   minDate: Date;
   maxDate: Date;
 
-  constructor(private formBuilder: FormBuilder,private modalService:ModalService,
+  constructor(private formBuilder: FormBuilder,
+              private modalService:ModalService,
               private ApprenantsService :ApprenantsService,
               private bsLocaleService: BsLocaleService) {
-    
+               
     this.bsLocaleService.use('fr');
-
     this.maxDate = new Date();
     this.maxDate.setDate(this.maxDate.getDate() - 730);
+    console.log(this.maxDate.toDateString());
+   // alert(this.maxDate.toISOString().slice(0,10));
   }
 /*--
   show()
@@ -59,14 +65,19 @@ export class RegistrationComponent implements OnInit {
   }
 -->*/
   onSave(){
+    for (const key in (<FormGroup>this.registerForm.get('inscriptionForm')).value ) {
+      if (this.inscriptionForm.get(key).value==null){
+    return;
+    }
+  }
     this.ApprenantsService.saveApprenant((<FormGroup>this.registerForm.get('inscriptionForm')).value)
     .subscribe(data => {
       console.log(data)
-    })    
-
-  }
+    })
+}
 
   ngOnInit() {
+
     //pour empechér le défilement de body
 $('.modal').on('hidden.bs.modal', function () {
     if($(".modal:visible").length > 0) {
@@ -76,17 +87,17 @@ $('.modal').on('hidden.bs.modal', function () {
     }
 });
 
-
     this.modalService.setModal(this.basicModal);
+
     let getCheckedRadio = null
     this.Radio_List.forEach(o => {
       if (o.checked)
         getCheckedRadio = o.value;
     })
-
+    
     this.registerForm = this.formBuilder.group({
       inscriptionForm : this.formBuilder.group({
-     selectedOptions: [getCheckedRadio, [Validators.required]],
+      selectedOptions: [getCheckedRadio, [Validators.required]],
       firstname: ['', [Validators.required]],
       lastname: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
@@ -103,7 +114,6 @@ $('.modal').on('hidden.bs.modal', function () {
     });
    
   }
-  
   public removeValidators() {
     for (const key in (<FormGroup>this.registerForm.get('inscriptionForm')).controls ) {
       this.inscriptionForm.get(key).clearValidators();
@@ -161,14 +171,14 @@ get formulaireForm() {
 }
 
 onSubmit1() {
-    this.iSubmitted = true;
-    if (this.registerForm.invalid  ){
-      return;
+  this.iSubmitted = true;
+
+    if(this.registerForm.invalid && this.registerForm.pristine) {
+        return;
+      // alert(this.scheduler);
+        /* Any API call logic via services goes here */
     }
-    if(this.iSubmitted)
-    {
-      this.showModal = false;
-    }
+    
 }
 onSubmit2() {
   this.fSubmitted = true;

@@ -1,8 +1,7 @@
 
   #mymodal{
-    position: absolute;
-    z-index: 1076;
-
+    position: absolute ;/* on peut modifier*/
+    z-index: 1076 ;
 }
 #mymodal2{
     position: absolute;
@@ -112,6 +111,8 @@
     margin: 0 5px 0 5px;
     padding: 0;
     -moz-appearance: none !important;
+    -webkit-appearance: none  !important;
+    -o-appearance: none  !important;
     }
 input[type='radio']:before {
     position: relative;
@@ -125,6 +126,8 @@ input[type='radio']:before {
     background:#efefef;
     content: "";
     -moz-appearance: none !important;
+    -webkit-appearance: none  !important;
+    -o-appearance: none  !important;
     }
 input[type='radio']:checked:after {
     position: relative;
@@ -138,4 +141,6 @@ input[type='radio']:checked:after {
     background: radial-gradient(ellipse at top left, rgb(245,255,200) 0%, rgb(129, 226, 19) 5%, rgb(75,175,0) 95%, rgb(31,149,16) 100%);
     content: "";
     -moz-appearance: none !important;
+    -webkit-appearance: none  !important;
+    -o-appearance: none  !important;
    }
