@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AccueilComponent } from './accueil/accueil.component';
@@ -16,6 +16,10 @@ import { LangueArabeAdulteComponent } from './langue-arabe-adulte/langue-arabe-a
 import { LangueArabeEnfantsComponent } from './langue-arabe-enfants/langue-arabe-enfants.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { FaireDonComponent } from './faire-don/faire-don.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { ApprenantsService } from './services/apprenant/ApprenantsService';
+
 
 const appRoutes: Routes = [
   { path: 'accueil', component: AccueilComponent },
@@ -43,15 +47,19 @@ const appRoutes: Routes = [
     LangueArabeEnfantsComponent,
     RegistrationComponent,
     FaireDonComponent
-	],
+  	],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    BsDatepickerModule.forRoot(),
     FormsModule,
-	  ReactiveFormsModule,
-    RouterModule.forRoot(appRoutes)
+	  ReactiveFormsModule,  
+    RouterModule.forRoot(appRoutes,{scrollPositionRestoration: 'enabled'})
+
   
   ],
-  providers: [],
+  providers: [ApprenantsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
