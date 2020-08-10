@@ -144,3 +144,7 @@ input[type='radio']:checked:after {
     -webkit-appearance: none  !important;
     -o-appearance: none  !important;
    }
+
+   .custom .bs-datepicker-head button {
+    background:#228;
+   }

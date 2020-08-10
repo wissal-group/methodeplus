@@ -46,7 +46,8 @@
 							<div class="form-group">
 								<input type="tel" class="form-control" formControlName="mobile" placeholder="Numéro de téléphone" [ngClass]="{ 'is-invalid': iSubmitted && f.mobile.errors }" />
 								<div *ngIf="iSubmitted && f.mobile.errors" class="invalid-feedback">
-									<div *ngIf="f.mobile.errors">Le Numéro de teléphone obligatoire</div>      
+									<div *ngIf="f.mobile.errors">Le Numéro de teléphone obligatoire</div>
+									
                                 </div>
 							</div>
 							<!-- >npm install jquery-datepicker
@@ -58,10 +59,10 @@
 							 <div class="form-group">
 								<div class="row">
 									<div class="col-md-6 col-sm-8">
-										<input class="form-control " type="text" placeholder="Date de naissance" id="date" formControlName="date" 
+										<input class=" form-control " type="text" placeholder="Date de naissance" id="date" formControlName="date" 
 										[ngClass]="{ 'is-invalid': iSubmitted && f.date.errors }" 
 										bsDatepicker placement="top" #dp="bsDatepicker" [maxDate]="maxDate"
-										[bsConfig]="{ dateInputFormat: 'DD/MM/YYYY' , showWeekNumbers:false }" 
+										[bsConfig]="{ dateInputFormat: 'DD/MM/YYYY' , showWeekNumbers:false, containerClass: 'theme-green' }" 
 										triggers='' (focus)='dp.show()'/>																				
 										<div *ngIf="iSubmitted && f.date.errors" class="invalid-feedback">
 												<div *ngIf="f.date.errors.required">Date obligatoire</div>
@@ -122,7 +123,7 @@
                                     <div class="col-6">
 										<input class="form-control" type="text" formControlName="postal_code" placeholder="Code postale" id="postal_code" formControlName="postal_code" [ngClass]="{ 'is-invalid': fSubmitted && ff.postal_code.errors }" />
 										<div *ngIf="fSubmitted && ff.postal_code.errors" class="invalid-feedback">
-												<div *ngIf="ff.postal_code.errors.required">Date obligatoire</div>
+												<div *ngIf="ff.postal_code.errors.required">code postale obligatoire</div>
 										</div>
 									</div>
 								</div>	
