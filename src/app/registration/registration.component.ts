@@ -101,14 +101,14 @@ $('.modal').on('hidden.bs.modal', function () {
       firstname: ['', [Validators.required]],
       lastname: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
-      mobile: ['', [Validators.required, Validators.pattern(/^-?(0|[1-9]\d*)?$/)]],
+      mobile: ['', [Validators.required, Validators.pattern(/^-?([0-9.+]\d*)?$/), Validators.minLength(8)]],
       date: ['', [Validators.required]]
   }),
 
     formulaireForm : this.formBuilder.group({
       adress : ['', [Validators.required, Validators.minLength(6)]],
       city: ['', [Validators.required, Validators.minLength(6)]],
-      postal_code: ['', [Validators.required, Validators.pattern(/^-?(0|[1-9]\d*)?$/), Validators.minLength(4)]]
+      postal_code: ['', [Validators.required, Validators.minLength(4)]]
 
     })
     });
@@ -130,13 +130,13 @@ $('.modal').on('hidden.bs.modal', function () {
    'firstname': [Validators.required],
    'lastname': [Validators.required],
    'email': [Validators.required, Validators.email],
-   'mobile': [Validators.required, Validators.pattern(/^-?(0|[1-9]\d*)?$/)],
+   'mobile': [Validators.required, Validators.pattern(/^-?([0-9.+]\d*)?$/), Validators.minLength(8)],
    'date':  [Validators.required]
   }
   validationType2 = {
     'adress': [Validators.required],
     'city': [Validators.required],
-    'postal_code': [Validators.required, Validators.pattern(/^-?(0|[1-9]\d*)?$/)]
+    'postal_code': [Validators.required,  Validators.minLength(4)]
     }
   public addValidators2() {
       for (const key in (<FormGroup>this.registerForm.get('formulaireForm')).controls) {
