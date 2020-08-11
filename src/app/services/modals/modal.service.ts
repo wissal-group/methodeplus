@@ -1,29 +1,36 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
-import { ModalDirective } from 'ng-uikit-pro-standard';
+import {ModalDirective} from 'ng-uikit-pro-standard';
 
 @Injectable({
 
-providedIn:'root'
+  providedIn: 'root'
 
 })
 
 export class ModalService {
 
-yourModal:ModalDirective;
+  yourModal: ModalDirective;
 
-constructor() { }
+  constructor() {
+  }
 
-setModal(modal:ModalDirective) {
+  setModal(modal: ModalDirective) {
 
-this.yourModal=modal;
+    this.yourModal = modal;
 
-}
+  }
 
-showModal() {
+  showModal() {
 
-this.yourModal.show();
+    this.yourModal.show();
 
-}
+  }
+
+  hideModal() {
+
+    this.yourModal.hide();
+
+  }
 
 }

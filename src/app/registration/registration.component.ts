@@ -45,7 +45,7 @@ export class RegistrationComponent implements OnInit {
               private modalService:ModalService,
               private ApprenantsService :ApprenantsService,
               private bsLocaleService: BsLocaleService) {
-               
+
     this.bsLocaleService.use('fr');
     this.maxDate = new Date();
     this.maxDate.setDate(this.maxDate.getDate() - 730);
@@ -55,10 +55,10 @@ export class RegistrationComponent implements OnInit {
 /*--
   show()
   {
-    this.showModal = true; 
-    
+    this.showModal = true;
+
   }
-  
+
   hide()
   {
     this.showModal = false;
@@ -72,7 +72,10 @@ export class RegistrationComponent implements OnInit {
   }
     this.ApprenantsService.saveApprenant((<FormGroup>this.registerForm.get('inscriptionForm')).value)
     .subscribe(data => {
-      console.log(data)
+      console.log(JSON.stringify(data));
+      this.onReset();
+      document.getElementById('annuler').click();
+      alert("souscription avec succès");
     })
 }
 
@@ -94,7 +97,7 @@ $('.modal').on('hidden.bs.modal', function () {
       if (o.checked)
         getCheckedRadio = o.value;
     })
-    
+
     this.registerForm = this.formBuilder.group({
       inscriptionForm : this.formBuilder.group({
       selectedOptions: [getCheckedRadio, [Validators.required]],
@@ -112,7 +115,7 @@ $('.modal').on('hidden.bs.modal', function () {
 
     })
     });
-   
+
   }
   public removeValidators() {
     for (const key in (<FormGroup>this.registerForm.get('inscriptionForm')).controls ) {
@@ -178,7 +181,7 @@ onSubmit1() {
       // alert(this.scheduler);
         /* Any API call logic via services goes here */
     }
-    
+
 }
 onSubmit2() {
   this.fSubmitted = true;
