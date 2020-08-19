@@ -46,8 +46,7 @@
 							<div class="form-group">
 								<input type="tel" class="form-control" formControlName="mobile" placeholder="Numéro de téléphone" [ngClass]="{ 'is-invalid': iSubmitted && f.mobile.errors }" />
 								<div *ngIf="iSubmitted && f.mobile.errors" class="invalid-feedback">
-									<div *ngIf="f.mobile.errors">Le Numéro de teléphone obligatoire</div>
-									
+									<div *ngIf="f.mobile.errors">Le Numéro de teléphone obligatoire</div>									
                                 </div>
 							</div>
 							<!-- >npm install jquery-datepicker

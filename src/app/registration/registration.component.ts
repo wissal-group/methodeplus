@@ -8,7 +8,6 @@ declare var $:any;
 import { BsLocaleService } from 'ngx-bootstrap/datepicker';
 import { defineLocale, frLocale } from 'ngx-bootstrap/chronos';
 import { user } from '../models/user';
-import { DatePipe } from '@angular/common';
 
 defineLocale('fr', frLocale);
 
@@ -77,15 +76,15 @@ export class RegistrationComponent implements OnInit {
 }
 
   ngOnInit() {
-
+    
     //pour empechér le défilement de body
-$('.modal').on('hidden.bs.modal', function () {
-    if($(".modal:visible").length > 0) {
-        setTimeout(function() {
-            $('body').addClass('modal-open');
-        },10)
-    }
-});
+    $('.modal').on('hidden.bs.modal', function () {
+        if($(".modal:visible").length > 0) {
+            setTimeout(function() {
+                $('body').addClass('modal-open');
+            },10)
+        }
+    });
 
     this.modalService.setModal(this.basicModal);
 
@@ -101,7 +100,7 @@ $('.modal').on('hidden.bs.modal', function () {
       firstname: ['', [Validators.required]],
       lastname: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
-      mobile: ['', [Validators.required, Validators.pattern(/^-?([0-9.+]\d*)?$/), Validators.minLength(8)]],
+      mobile: ['', [Validators.required, Validators.pattern(/^([0-9+]\d*)?$/), Validators.minLength(8)]],
       date: ['', [Validators.required]]
   }),
 
@@ -120,7 +119,7 @@ $('.modal').on('hidden.bs.modal', function () {
       this.inscriptionForm.get(key).updateValueAndValidity();
  }
 
-     for (const key in (<FormGroup>this.registerForm.get('formulaireForm')).controls ) {
+    for (const key in (<FormGroup>this.registerForm.get('formulaireForm')).controls ) {
       this.formulaireForm.get(key).clearValidators();
       this.formulaireForm.get(key).updateValueAndValidity();
 }
@@ -130,7 +129,7 @@ $('.modal').on('hidden.bs.modal', function () {
    'firstname': [Validators.required],
    'lastname': [Validators.required],
    'email': [Validators.required, Validators.email],
-   'mobile': [Validators.required, Validators.pattern(/^-?([0-9.+]\d*)?$/), Validators.minLength(8)],
+   'mobile': [Validators.required, Validators.pattern(/^([0-9+]\d*)?$/), Validators.minLength(8)],
    'date':  [Validators.required]
   }
   validationType2 = {

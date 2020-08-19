@@ -7,7 +7,10 @@
   line-height:24px;
 }
 .site-footer img{
-	margin-top:-17px;
+  margin-top:-15px;
+ margin-left: 100px;
+    max-width: 140px;
+
 }
 
 .site-footer h5 {
