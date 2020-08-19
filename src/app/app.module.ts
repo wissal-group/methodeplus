@@ -12,23 +12,30 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CoursCoranComponent } from './cours-coran/cours-coran.component';
 import { CoursIslamComponent } from './cours-islam/cours-islam.component';
 import { QuiSommesNousComponent } from './qui-sommes-nous/qui-sommes-nous.component';
-import { LangueArabeAdulteComponent } from './langue-arabe-adulte/langue-arabe-adulte.component';
-import { LangueArabeEnfantsComponent } from './langue-arabe-enfants/langue-arabe-enfants.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { FaireDonComponent } from './faire-don/faire-don.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { ApprenantsService } from './services/apprenant/ApprenantsService';
+import { ArabePourEnfantsComponent } from './arabe-pour-enfants/arabe-pour-enfants.component';
+import { ArabePourAdultesComponent } from './arabe-pour-adultes/arabe-pour-adultes.component';
+import { AnglaisComponent } from './anglais/anglais.component';
+import { FrancaisFleComponent } from './francais-fle/francais-fle.component';
+import { SoutienScolaireComponent } from './soutien-scolaire/soutien-scolaire.component';
+import { SciencesIslamComponent } from './sciences-islam/sciences-islam.component';
 
 
 
 const appRoutes: Routes = [
   { path: 'accueil', component: AccueilComponent },
   { path: 'qui-sommes-nous', component: QuiSommesNousComponent},
-  { path: 'langue-arabe-adulte', component: LangueArabeAdulteComponent },
-  { path: 'langue-arabe-enfants', component: LangueArabeEnfantsComponent },
-  { path: 'cours-de-coran', component: CoursCoranComponent },
-  { path: 'cours-islam', component: CoursIslamComponent },
+  { path: 'arabe-pour-adultes', component: ArabePourAdultesComponent },
+  { path: 'arabe-pour-enfants', component: ArabePourEnfantsComponent },
+  { path: 'anglais', component: AnglaisComponent },
+  { path: 'sciences-islam', component: SciencesIslamComponent },
+  
+  { path: 'soutien-scolaire', component: SoutienScolaireComponent },
+  { path: 'francais-fle', component: FrancaisFleComponent },
   { path: 'faire-don', component: FaireDonComponent },
   { path: '', component: AccueilComponent },
   { path: '**', redirectTo: 'not-found' }
@@ -44,10 +51,14 @@ const appRoutes: Routes = [
     CoursCoranComponent,
     CoursIslamComponent,
     QuiSommesNousComponent,
-    LangueArabeAdulteComponent,
-    LangueArabeEnfantsComponent,
     RegistrationComponent,
-    FaireDonComponent
+    FaireDonComponent,
+    ArabePourEnfantsComponent,
+    ArabePourAdultesComponent,
+    AnglaisComponent,
+    FrancaisFleComponent,
+    SoutienScolaireComponent,
+    SciencesIslamComponent
   	],
   imports: [
     BrowserModule,

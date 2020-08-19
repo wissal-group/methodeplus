@@ -1,7 +1,9 @@
 
-  #mymodal{
+#mymodal{
     position: absolute ;/* on peut modifier*/
     z-index: 1076 ;
+    scrollbar-width: thin;
+    
 }
 #mymodal2{
     position: absolute;
@@ -145,6 +147,4 @@ input[type='radio']:checked:after {
     -o-appearance: none  !important;
    }
 
-   .custom .bs-datepicker-head button {
-    background:#228;
-   }
+   
