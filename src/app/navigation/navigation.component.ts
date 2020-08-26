@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild, NgModule, ElementRef } from '@angular/core';
-import { RegistrationComponent } from '../registration/registration.component';
-import { ModalService } from '../services//modals/modal.service';
+
 declare var $:any;
 @Component({
   selector: 'app-navigation',
@@ -9,13 +8,9 @@ declare var $:any;
 })
 export class NavigationComponent implements OnInit {
 
-constructor(private modalService:ModalService) {}
+constructor() {}
 
-openModal() {
 
-this.modalService.showModal();
-
-}
   ngOnInit(): void {
 
   $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {

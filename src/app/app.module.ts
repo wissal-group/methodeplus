@@ -9,14 +9,9 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { CoursCoranComponent } from './cours-coran/cours-coran.component';
-import { CoursIslamComponent } from './cours-islam/cours-islam.component';
 import { QuiSommesNousComponent } from './qui-sommes-nous/qui-sommes-nous.component';
-import { RegistrationComponent } from './registration/registration.component';
-import { FaireDonComponent } from './faire-don/faire-don.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
-import { ApprenantsService } from './services/apprenant/ApprenantsService';
 import { ArabePourEnfantsComponent } from './arabe-pour-enfants/arabe-pour-enfants.component';
 import { ArabePourAdultesComponent } from './arabe-pour-adultes/arabe-pour-adultes.component';
 import { AnglaisComponent } from './anglais/anglais.component';
@@ -35,7 +30,7 @@ const appRoutes: Routes = [
   { path: 'sciences-islam', component: SciencesIslamComponent },  
   { path: 'soutien-scolaire', component: SoutienScolaireComponent },
   { path: 'francais-fle', component: FrancaisFleComponent },
-  { path: 'faire-don', component: FaireDonComponent },
+ 
   { path: '', component: AccueilComponent },
   { path: '**', redirectTo: 'not-found' }
 ];
@@ -47,11 +42,7 @@ const appRoutes: Routes = [
     NavigationComponent,
     AccueilComponent,
     FooterComponent,
-    CoursCoranComponent,
-    CoursIslamComponent,
     QuiSommesNousComponent,
-    RegistrationComponent,
-    FaireDonComponent,
     ArabePourEnfantsComponent,
     ArabePourAdultesComponent,
     AnglaisComponent,
@@ -70,7 +61,7 @@ const appRoutes: Routes = [
 
   
   ],
-  providers: [ApprenantsService,DatePipe],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

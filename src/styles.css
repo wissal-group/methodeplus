@@ -48,10 +48,15 @@ body {
    color:blue ;
  }
 
- ul li,p {
+p {
 	color:#777977 !important;
  }  
-.btn-success {
+
+ ul > li, ul li{
+  color:#777977 !important;
+ }
+ 
+ .btn-success {
   color: #fff !important;
 }
 
