@@ -28,11 +28,13 @@ this.modalService.showModal();
         $('.dropdown-submenu .show').removeClass("show");
     });
     return false;
-});
+    });
+    
     $(".navbar-nav li a").click(function(event) {
       if (!$(this).parent().hasClass('dropdown'))
           $(".navbar-collapse").collapse('hide');
     });
+    
     
     $(window).scroll(function () {
       var window_top = $(window).scrollTop() + 1;

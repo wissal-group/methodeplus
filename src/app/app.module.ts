@@ -32,8 +32,7 @@ const appRoutes: Routes = [
   { path: 'arabe-pour-adultes', component: ArabePourAdultesComponent },
   { path: 'arabe-pour-enfants', component: ArabePourEnfantsComponent },
   { path: 'anglais', component: AnglaisComponent },
-  { path: 'sciences-islam', component: SciencesIslamComponent },
-  
+  { path: 'sciences-islam', component: SciencesIslamComponent },  
   { path: 'soutien-scolaire', component: SoutienScolaireComponent },
   { path: 'francais-fle', component: FrancaisFleComponent },
   { path: 'faire-don', component: FaireDonComponent },
