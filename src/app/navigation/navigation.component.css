@@ -6,6 +6,7 @@
   
   .main_menu .navbar-brand img{
     max-width: 140px;
+    image-rendering: pixelated;
     
   }
   @media (max-width: 991px) {
