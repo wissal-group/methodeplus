@@ -62,19 +62,7 @@
   .main_menu .main-menu-item ul li .nav-link:hover {
     color: #007bff;
   }
-/*button s'inscrire*/
-  /*.main_menu .main-menu-item ul .btn_1 {
-    color: #fff;
-    background-color: #1F9510;
-    font-family: "Cera Pro Regular";
-    font-size: 15px;
-    padding: 8px 20px;
-    margin-left: 15px;
-    text-transform: capitalize;
-    border: 1px solid transparent;
-    border-radius: 4px;
-  }*/
-
+  
   .dropdown-menu {
     border: 0px solid rgba(0, 0, 0, 0.15) !important;
     background-color: #fafafa;
@@ -190,10 +178,10 @@
     /*  margin: 0 !important;/**/
     }
 
-  .navbar-nav .dropdown-toggle:hover  ul.dropdown-menu {
+  .navbar-nav li.dropdown-toggle:hover  ul.dropdown-menu {
       display: block;
   }
-  .dropdown-submenu {
+  .dropdown-menu .dropdown-submenu {
       position:relative;
       margin-top:-6px;
       padding: 0px;
