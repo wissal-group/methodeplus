@@ -7,11 +7,13 @@
   line-height:24px;
 }
 .site-footer img{
- margin-top:-25px;
- margin-bottom: 15px;
- margin-left: 100px;
+ position: relative;
+ top:0;
+ left:50%;
+ right: 0;
+ bottom: O;
+ margin:0 -70px 0;
  max-width: 140px;
-
 }
 
 .site-footer h5 {
