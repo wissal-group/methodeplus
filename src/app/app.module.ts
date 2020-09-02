@@ -18,6 +18,7 @@ import { AnglaisComponent } from './anglais/anglais.component';
 import { FrancaisFleComponent } from './francais-fle/francais-fle.component';
 import { SoutienScolaireComponent } from './soutien-scolaire/soutien-scolaire.component';
 import { SciencesIslamComponent } from './sciences-islam/sciences-islam.component';
+import { ContactService } from './services/contact.service';
 
 
 
@@ -61,7 +62,8 @@ const appRoutes: Routes = [
 
   
   ],
-  providers: [DatePipe],
+  providers: [  ContactService,DatePipe],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }
