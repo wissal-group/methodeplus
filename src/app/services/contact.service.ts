@@ -6,11 +6,10 @@ import { contact } from '../models/contact';
 @Injectable()
 export class ContactService {
   constructor(private httpClient: HttpClient) { }
-  baseURL: string = "http://localhost:3000/";
+  baseURL: string = "https://0nu4g3uzvh.execute-api.eu-west-3.amazonaws.com/default/methodeplusmailer";
   saveContact(contact: contact): Observable<any> {
-    const headers = { 'content-type': 'application/json' };
     const body = JSON.stringify(contact);
     console.log(body);
-    return this.httpClient.post(this.baseURL + 'contacts', body, { 'headers': headers });
+    return this.httpClient.post(this.baseURL, body);
   }
 }
