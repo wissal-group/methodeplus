@@ -10,7 +10,6 @@ export class NavigationComponent implements OnInit {
 
 constructor() {}
 
-
   ngOnInit(): void {
 
   $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {

@@ -38,7 +38,7 @@ body {
    font-family:  Cera Pro Regular;
    margin-top:5px !important;
    /*font-size:16px !important;*/
-   color:blue ;
+   color:#136991 ;
  }
 
 p {
@@ -49,8 +49,15 @@ p {
   color:#777977 !important;
  }
  
- .btn-success {
-  color: #fff !important;
+ .btn-primary {
+  color: #fff;
+  background-color: #1ba9bc !important;
+  border-color: #1ba9bc !important;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #24c1d6 !important;
+  border-color: #24c1d6 !important;
 }
 
  .btn {

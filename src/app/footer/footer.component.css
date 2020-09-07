@@ -39,18 +39,18 @@ margin-right:5px;
 }
 .site-footer .footer-links a:hover
 {
-  color: #007bff;
+  color: #1ba9bc;
   text-decoration:none;
 }
 .btn-light{
- color: #007bff;
+ color: #1ba9bc;
  /*background:#efefef;*/
  font-family:'Cera Pro Medium';
 } 
 
 .fa-phone , .fa-at , .fa-map-marker{
 	font-size:20px;
-	 color: #007bff;
+	 color: #1ba9bc;
 }
 .social-media-rounded .fa {
   padding: 13px;
@@ -70,7 +70,7 @@ background:#efefef;
 
 .fa-facebook , .fa-twitter, .fa-instagram{
   background: #ffffff;
-  color: #007bff;
+  color: #1ba9bc;
 }
 
 .input-group .input{

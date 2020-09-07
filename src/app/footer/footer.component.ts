@@ -30,16 +30,14 @@ export class FooterComponent implements OnInit {
     for (const key in (this.contactForm.controls) ) {
     this.contactForm.clearValidators();
     this.contactForm.updateValueAndValidity();
-    }
-    
+    } 
   }
   ngOnInit(): void {
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       subject: ['', Validators.required],
-      message: ['', Validators.required],
-      
+      message: ['', Validators.required],    
   });
   }
 
@@ -56,5 +54,4 @@ export class FooterComponent implements OnInit {
       this.contactForm.reset();
     }
   }
-
 }

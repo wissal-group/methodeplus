@@ -12,7 +12,7 @@
 						vivantes, du soutien scolaire et des sciences musulmanes </p>
 					<p><i class="fa fa-phone" ></i>  Phone: 06.36.40.56.58</p>
 					<p><i class="fa fa-at" ></i>  Email: <a href="mailto:hello@domain.com">admin@methodeplus.net</a></p>
-					<p><i class="fa fa-map-marker"></i> Les cours ont lieu au : 8 rue de la garde 44300 Nantes</p>
+					<p><i class="fa fa-map-marker"></i> Les cours ont lieu au : Rue de la garde 44300 Nantes</p>
 				</div>
 			</div>
 
@@ -68,7 +68,7 @@
 				
 					<div class="col-12">
 						<div class="form-group">
-							<textarea formControlName="message" class="form-control w-100" name="message" id="message" cols="30" rows="4" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Votre Message'" placeholder = 'Votre Message' [ngClass]="{ 'is-invalid': submitted && f.message.errors }"></textarea>
+							<textarea formControlName="message" class="form-control" name="message" id="message" cols="30" rows="4" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Votre Message'" placeholder = 'Votre Message' [ngClass]="{ 'is-invalid': submitted && f.message.errors }"></textarea>
 							<div *ngIf="submitted && f.message.errors" class="invalid-feedback">
 								<div *ngIf="f.message.errors.required">message obligatoire</div>
 							   </div>
@@ -76,7 +76,6 @@
 					</div>
 
 					
-
 					</div>
 					<div class="form-group mt-3">
 						<button class="btn btn-md btn-primary" role="button" type="submit" (click)="onSave();removeValidators()" >Envoyer</button> 
