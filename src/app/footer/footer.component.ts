@@ -21,28 +21,33 @@ export class FooterComponent implements OnInit {
       }else{
     this.contactService.saveContact(this.contactForm.value)
     .subscribe(data => {
-      console.log(data)
-    })   
+      console.log(data);
+      alert('Message Envoyé ');
+    })
   }
 }
- 
+
     removeValidators(){
     for (const key in (this.contactForm.controls) ) {
     this.contactForm.clearValidators();
     this.contactForm.updateValueAndValidity();
     } 
+
+
   }
   ngOnInit(): void {
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       subject: ['', Validators.required],
-      message: ['', Validators.required],    
+
+      message: ['', Validators.required],
+
   });
   }
 
   get f() { return this.contactForm.controls ; }
- 
+
   onSubmit() {
     this.submitted = true;
     if (this.contactForm.invalid){
