@@ -541,7 +541,7 @@ ArabePourAdultesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "strong");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "Samedi");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, " et ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, " ou ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "strong");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "dimanche");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -577,7 +577,7 @@ ArabePourAdultesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, "Avoir 14 ans et plus.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, "Fiche d\u2019inscription d\u00FBment remplie et sign\u00E9e (Cliquer sur ce lien)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, "Fiche d\u2019inscription d\u00FBment remplie et sign\u00E9e ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, "Une photo d'identit\u00E9 r\u00E9cente");
@@ -741,13 +741,13 @@ ArabePourEnfantsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](63, "Avoir 4 ans et plus.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](65, "Fiche d\u2019inscription dument remplie et sign\u00E9e (Cliquer sur ce lien)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](65, "Fiche d\u2019inscription dument remplie et sign\u00E9e ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](66, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](67, "Une photo d\u2019identit\u00E9 r\u00E9cente de l\u2019\u00E9l\u00E8ve.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](68, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](69, "1 enveloppes timbr\u00E9es sans le libell\u00E9 (format A5)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](69, "1 enveloppes timbr\u00E9es sans le libell\u00E9 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](70, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](71, "Une attestation d\u2019assurance responsabilit\u00E9 civile");
