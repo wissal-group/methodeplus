@@ -1,0 +1,100 @@
+<!--  footer
+  -----------------------------------------------------------------------
+ -->
+ <footer class="site-footer">
+	<div class="container">
+		<div class="row ">
+
+			<div class="col-lg-5 col-md-5 col-sm-12 mb-4">
+				<div class="footer_h">
+					<a href="https://www.methodeplus.net/"><img src="..\assets\logo\logo3.svg" alt="logo"></a>
+					<p class="text-justify "><span>METHODE PLUS </span>est une association à but non lucratif  basé à Nantes. C’est un centre spécialisé dans l’enseignement des langues
+						vivantes et du soutien scolaire </p>
+					<p><i class="fa fa-phone" ></i>  Phone: 06.36.40.56.58</p>
+					<p><i class="fa fa-at" ></i>  Email: <a href="mailto:hello@domain.com">admin@methodeplus.net</a></p>
+				</div>
+			</div>
+
+			<!-- <div class="col-lg-3 col-md-3 col-sm-6 ">/**********************/
+				<h5>Cours de Coran</h5>
+				<hr class=" mb-2 mt-0 d-inline-block mx-auto" style="width: 140px;">
+
+				<ul class="footer-links">
+					<li><a href="">exemple de lien</a></li>
+					<li><a href="">exemple de lien</a></li>
+					<li><a href="">exemple de lien</a></li>
+					<li><a href="">exemple de lien</a></li>
+				</ul>
+			</div> -->
+
+			<div class="col-lg-6 offset-lg-1 col-md-6 offset-md-1 ">
+				<h5>Contact</h5>
+				<hr class=" mb-4 mt-0 d-inline-block mx-auto" style="width: 90px;">
+
+			<div class="footer_letter ">
+
+				<form [formGroup]="contactForm" (ngSubmit)="onSubmit() " >
+					<div class="row">
+
+					<div class="col-sm-6">
+						<div class="form-group">
+						  <input formControlName="name" class="form-control" name="name"  type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Votre Nom'" placeholder = 'Votre Nom' [ngClass]="{ 'is-invalid': submitted && f.name.errors }">
+						  <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+							<div *ngIf="f.name.errors.required">Nom obligatoire</div>
+					 </div>
+						</div>
+					</div>
+
+					<div class="col-sm-6">
+						<div class="form-group">
+						  <input formControlName="email" class="form-control" name="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Votre Email'" placeholder = 'Votre Email' [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+						  <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+
+							<div *ngIf="f.email.errors.required">Email obligatoire</div>
+							<div *ngIf="f.email.errors.email">L'email doit être une adresse valide.</div>
+						   </div>
+						</div>
+					</div>
+
+					<div class="col-12">
+						<div class="form-group">
+						  <input formControlName="subject" class="form-control" name="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Sujet'" placeholder = 'Sujet' [ngClass]="{ 'is-invalid': submitted && f.subject.errors }">
+						  <div *ngIf="submitted && f.subject.errors" class="invalid-feedback">
+							<div *ngIf="f.subject.errors.required">sujet obligatoire</div>
+					 	  </div>
+						</div>
+					</div>
+
+					<div class="col-12">
+						<div class="form-group">
+							<textarea formControlName="message" class="form-control" name="message" id="message" cols="30" rows="4" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Votre Message'" placeholder = 'Votre Message' [ngClass]="{ 'is-invalid': submitted && f.message.errors }"></textarea>
+							<div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+								<div *ngIf="f.message.errors.required">message obligatoire</div>
+							   </div>
+						</div>
+					</div>
+
+
+					</div>
+					<div class="form-group mt-3">
+						<button class="btn btn-md btn-primary" role="button" type="submit" (click)="onSave();removeValidators()" >Envoyer</button>
+					</div>
+				  </form>
+			</div>
+				<!-- <div class="mb-2 btn_en">
+					<button class="btn btn-md btn-light" role="button" href="#" >Envoyer</button>
+				</div> -->
+
+		<div class="social-media-rounded">
+				<a href="https://www.facebook.com/methodeplus.net/" target="_blank"><i class="fa fa-facebook "></i></a>
+
+				<a href="https://www.instagram.com/centre_methode_plus/" target="_blank"><i class="fa fa-instagram "> </i></a>
+		</div>
+
+
+
+    </div>
+    <hr>
+  </div>
+</div>
+</footer>
