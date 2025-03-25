@@ -644,7 +644,6 @@ ArabePourEnfantsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, " met \u00E0 votre disposition une structure moderne et comp\u00E9tente dont l'objectif est d\u2019acqu\u00E9rir des bases essentielles de la langue arabe (lecture, \u00E9criture et expression). ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "p", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Nous proposons \u00E9galement \u00E0 vos enfants des cours d\u2019\u00E9veil spirituel permettant \u00E0 l'enfant d'apprendre les bases de la religion musulmane.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "p", 6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Pour r\u00E9aliser ces objectifs, METHODE PLUS met en place les moyens suivants :");

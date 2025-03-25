@@ -1288,8 +1288,6 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "p", 5);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Nous proposons \xE9galement \xE0 vos enfants des cours d\u2019\xE9veil spirituel permettant \xE0 l'enfant d'apprendre les bases de la religion musulmane.");
-
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "p", 6);
