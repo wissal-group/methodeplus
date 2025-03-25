@@ -2474,7 +2474,7 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, " est une association \xE0 but non lucratif bas\xE9 \xE0 Nantes. C\u2019est un centre sp\xE9cialis\xE9 dans l\u2019enseignement des langues vivantes et du soutien scolaire. ");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, " est une association \xE0 but non lucratif bas\xE9 \xE0 Nantes. C\u2019est un centre sp\xE9cialis\xE9 dans l\u2019enseignement des langues vivantes . ");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
