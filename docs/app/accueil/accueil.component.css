@@ -176,6 +176,9 @@
     .h_gallery_item .btn_2 .btn {
       padding: 8px 35px;
     }
+    .btn_big{
+      padding: 10px 40px;
+    }
   
   
   /* RESPONSIVE CSS
