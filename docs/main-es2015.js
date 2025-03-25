@@ -102,7 +102,7 @@ AccueilComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "strong");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "METHODE PLUS");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, " est une association \u00E0 but non lucratif et bas\u00E9 \u00E0 Nantes. C\u2019est un centre sp\u00E9cialis\u00E9 dans l\u2019enseignement des langues vivantes et du soutien scolaire. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, " est une association \u00E0 but non lucratif et bas\u00E9 \u00E0 Nantes. C\u2019est un centre sp\u00E9cialis\u00E9 dans l\u2019enseignement des langues vivantes . ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "p", 20);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, " Nous sommes des professionnels de l\u2019enseignement \u00E0 la recherche du meilleur pour nos \u00E9l\u00E8ves.");
@@ -904,7 +904,7 @@ FooterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "span");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "METHODE PLUS ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "est une association \u00E0 but non lucratif bas\u00E9 \u00E0 Nantes. C\u2019est un centre sp\u00E9cialis\u00E9 dans l\u2019enseignement des langues vivantes et du soutien scolaire ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "est une association \u00E0 but non lucratif bas\u00E9 \u00E0 Nantes. C\u2019est un centre sp\u00E9cialis\u00E9 dans l\u2019enseignement des langues vivantes. ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "i", 8);
@@ -1242,7 +1242,7 @@ QuiSommesNousComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵd
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "strong");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "METHODE PLUS");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, " est une association \u00E0 but non lucratif bas\u00E9 \u00E0 Nantes. C\u2019est un centre sp\u00E9cialis\u00E9 dans l\u2019enseignement des langues vivantes et du soutien scolaire. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, " est une association \u00E0 but non lucratif bas\u00E9 \u00E0 Nantes. C\u2019est un centre sp\u00E9cialis\u00E9 dans l\u2019enseignement des langues vivantes . ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "p", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, " Nous sommes des professionnels de l\u2019enseignement \u00E0 la recherche du meilleur pour nos \u00E9l\u00E8ves.");
