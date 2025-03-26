@@ -14,9 +14,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { ArabePourEnfantsComponent } from './arabe-pour-enfants/arabe-pour-enfants.component';
 import { ArabePourAdultesComponent } from './arabe-pour-adultes/arabe-pour-adultes.component';
-import { AnglaisComponent } from './anglais/anglais.component';
-import { FrancaisFleComponent } from './francais-fle/francais-fle.component';
-import { SoutienScolaireComponent } from './soutien-scolaire/soutien-scolaire.component';
 import { SciencesIslamComponent } from './sciences-islam/sciences-islam.component';
 import { ContactService } from './services/contact.service';
 
@@ -27,10 +24,7 @@ const appRoutes: Routes = [
   { path: 'qui-sommes-nous', component: QuiSommesNousComponent},
   { path: 'arabe-pour-adultes', component: ArabePourAdultesComponent },
   { path: 'arabe-pour-enfants', component: ArabePourEnfantsComponent },
-  { path: 'anglais', component: AnglaisComponent },
   { path: 'sciences-islam', component: SciencesIslamComponent },  
-  { path: 'soutien-scolaire', component: SoutienScolaireComponent },
-  { path: 'francais-fle', component: FrancaisFleComponent },
  
   { path: '', component: AccueilComponent },
   { path: '**', redirectTo: 'not-found' }
@@ -46,9 +40,6 @@ const appRoutes: Routes = [
     QuiSommesNousComponent,
     ArabePourEnfantsComponent,
     ArabePourAdultesComponent,
-    AnglaisComponent,
-    FrancaisFleComponent,
-    SoutienScolaireComponent,
     SciencesIslamComponent
   	],
   imports: [
