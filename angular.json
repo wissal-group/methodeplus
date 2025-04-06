@@ -99,17 +99,20 @@
 
           }
         },
-                  "serve": {
-            "builder": "@angular-devkit/build-angular:dev-server",
-            "options": {
-              "browserTarget": "app4lavertu:build"  
-            },
-            "configurations": {
-              "production": {
-                "browserTarget": "app4lavertu:build:production"
-              }
-            }
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "app4lavertu:build"
           },
+          "configurations": {
+            "production": {
+              "browserTarget": "app4lavertu:build:production"
+            },
+            "staging": {
+              "browserTarget": "app4lavertu:build:build:staging"
+            }
+          }
+        },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {

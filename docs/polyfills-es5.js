@@ -18900,7 +18900,7 @@
     /***/
     function _(module, exports, __webpack_require__) {
       __webpack_require__(
-      /*! C:\Users\PC\Documents\GitHub\methodeplus\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\es5-polyfills.js */
+      /*! /home/amani/Bureau/project/methodeplus/methodeplus/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js */
       "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js");
 
       __webpack_require__(
@@ -18908,7 +18908,7 @@
       "./node_modules/zone.js/dist/zone-legacy.js");
 
       module.exports = __webpack_require__(
-      /*! C:\Users\PC\Documents\GitHub\methodeplus\src\polyfills.ts */
+      /*! /home/amani/Bureau/project/methodeplus/methodeplus/src/polyfills.ts */
       "./src/polyfills.ts");
       /***/
     }
