@@ -1254,7 +1254,7 @@
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "p", 6);
 
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "1) Une \xE9quipe d\u2019enseignants sp\xE9cialis\xE9s et qualifi\xE9s dans l\u2019enseignement de la langue arabe et de l\u2019\xE9ducation musulmane .");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "1) Une \xE9quipe d\u2019enseignants sp\xE9cialis\xE9s et qualifi\xE9s dans l\u2019enseignement de la langue arabe .");
 
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -3082,7 +3082,7 @@
     /***/
     function _(module, exports, __webpack_require__) {
       module.exports = __webpack_require__(
-      /*! /home/amani/Bureau/project/methodeplus/methodeplus/src/main.ts */
+      /*! /home/amani/Bureau/project/methodeplus/methodeplus/methodeplus/src/main.ts */
       "./src/main.ts");
       /***/
     }

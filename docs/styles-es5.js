@@ -650,19 +650,19 @@
     /***/
     function _(module, exports, __webpack_require__) {
       __webpack_require__(
-      /*! /home/amani/Bureau/project/methodeplus/methodeplus/src/styles.css */
+      /*! /home/amani/Bureau/project/methodeplus/methodeplus/methodeplus/src/styles.css */
       "./src/styles.css");
 
       __webpack_require__(
-      /*! /home/amani/Bureau/project/methodeplus/methodeplus/node_modules/bootstrap/dist/css/bootstrap.min.css */
+      /*! /home/amani/Bureau/project/methodeplus/methodeplus/methodeplus/node_modules/bootstrap/dist/css/bootstrap.min.css */
       "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 
       __webpack_require__(
-      /*! /home/amani/Bureau/project/methodeplus/methodeplus/node_modules/ngx-bootstrap/datepicker/bs-datepicker.css */
+      /*! /home/amani/Bureau/project/methodeplus/methodeplus/methodeplus/node_modules/ngx-bootstrap/datepicker/bs-datepicker.css */
       "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css");
 
       module.exports = __webpack_require__(
-      /*! /home/amani/Bureau/project/methodeplus/methodeplus/node_modules/font-awesome/css/font-awesome.css */
+      /*! /home/amani/Bureau/project/methodeplus/methodeplus/methodeplus/node_modules/font-awesome/css/font-awesome.css */
       "./node_modules/font-awesome/css/font-awesome.css");
       /***/
     }

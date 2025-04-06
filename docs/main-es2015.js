@@ -627,7 +627,7 @@ ArabePourEnfantsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Pour r\u00E9aliser ces objectifs, METHODE PLUS met en place les moyens suivants :");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "p", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "1) Une \u00E9quipe d\u2019enseignants sp\u00E9cialis\u00E9s et qualifi\u00E9s dans l\u2019enseignement de la langue arabe et de l\u2019\u00E9ducation musulmane .");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "1) Une \u00E9quipe d\u2019enseignants sp\u00E9cialis\u00E9s et qualifi\u00E9s dans l\u2019enseignement de la langue arabe .");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "p", 6);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "2) Des m\u00E9thodes p\u00E9dagogiques personnalis\u00E9es . ");
@@ -1552,7 +1552,7 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["platformBrowser"]().boot
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/amani/Bureau/project/methodeplus/methodeplus/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /home/amani/Bureau/project/methodeplus/methodeplus/methodeplus/src/main.ts */"./src/main.ts");
 
 
 /***/ })
